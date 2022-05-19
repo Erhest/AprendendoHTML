@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <Form action="#" method="get" name="cadastro-usuário" target="_self" autocomplete="on"> 
+        <div class="container-formulario">
+
+            <div class="box-title"><h2>Cadastro</h2></div>
+            <div class="box-input">
+                <label for="input-id">Id</label>
+                <input type="text" name="id" id="input-id"  size="4" value="00001" disabled>
+            </div>
+            <div class="box-input">
+                <label for="input-nome">Nome</label>
+                <input type="text" name="nome" id="input-nome" placeholder="Kenji"> <!-- Autofocus = ja seleciona a opção para escrever-->
+            </div>
+
+            <div class="box-input">
+                <label for=>Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="box-input">
+                <label for="password">Senha</label>
+                <input type="password" name="pass" id="password" required>
+            </div>
+            <fieldset>
+                <legend>Endereço</legend>
+                <div class="box-adress">
+                    <label for="">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="123654-987" maxlength="9" size="10" required>
+                </div>
+
+                <div class="box-adress">
+                    <label for="">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="sp">São Paulo</option>                        
+                    </select>
+                </div>
+
+                <div class="box-adress">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+
+                <div class="box-adress">
+                    <label for="">Rua</label>
+                    <input type="text" name="bairro" id="bairo" required> 
+                </div>
+
+                <div class="box-adress">
+                    <label for="">Bairro</label>
+                    <input type="text" name="rua" id="rua" placeholder="Rua José" required> 
+                    <label for="">N°</label>
+                    <input type="number" name="numero" id="numero" placeholder="65" size="5" min="0" required>
+                </div>
+
+                <div class="box-adress">
+                    <label for="Complemento">Complemento</label>
+                    <input type="text" name="Complemento" id="Complemento" placeholder="apto. n°25"> 
+            </fieldset>      
+            
+            ,<fieldset>
+                <legend>Sexo</legend>
+                <div>
+                    <h3>Sexo</h3>
+                    <label for="Masculino">Masculino</label>
+                    <input type="radio" name="sexo" id="masculino" value="m">
+                    <label for="Feminino">Feminino</label>
+                    <input type="radio" name="sexo1" id="feminino" value="f" checked>
+                    <label for="Outros">Outros</label>
+                    <input type="radio" name="sexo2" id="Outros" value="o">
+                    <label for="nao-dizer">Prefiro não dizer</label>
+                    <input type="radio" name="sexo3" id="nao-dizer" value="n">                    
+                </div>
+
+                <div>
+                    <h3>Cursos</h3>
+                    <label for="">HTML</label>
+                    <input type="checkbox" name="cursos" id="html" value="html" 
+                    <label for="">CSS</label>
+                    <input type="checkbox" name="cursos" id="html" value="html" 
+                    <label for="">HTML</label>
+                    <input type="checkbox" name="cursos" id="html" value="html" 
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="box-data">
+                    <label for="nasc">Nascimento</label>
+                    <input type="data" name="nasc" id="nasc" required>
+                <div class="box-data">
+                    <label for="agenda">Agendamento</label>
+                    <input type="date-time-local" name="agenda" id="agenda" required>
+                <div class="box-data">
+                    <label for="agenda">Agendamento</label>
+                    <input type="time" name="hora" id="hora" required>
+                <div class="box-data">
+                    <label for="week">Semana</label>
+                    <input type="time" name="week" id="week" required>
+                <div class="box-data">
+                    <label for="month">Mês</label>
+                    <input type="month" name="mes" id=mes" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Outros</legend>
+                <div class="box-outros">
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor" value="#ffffff">
+                </div>
+                <div class="box-outros">
+                <label>0%</label>
+                <input type="range" name="vol" id="vol" value="25" max="100" min="0">
+                <label>100%</label>
+                <div class="box-outros">
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" placeholder="https//instagram.com/">                
+                <div class="box-outros">
+                <label for="search">Pesquisar</label>
+                <input type="search" name="search" id="search" placeholder="Buscar">                
+                <div class="box-outros">
+                <input type="file" name="arquivo" id="arquivo" accept="image/*" multiple>                           
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Texto</legend>
+                <div>
+                    <textarea name="texto" id="txt" cols="30" rows="10" wrap="hard"></textarea>
+                </div>
+            </fieldset>
+
+            
+
+            <div class="box-buttons">
+                <input type="submit" value="cadastrar">
+                <input type="reset" value="limpar">
+            </div>
+        </div>
+
+        <Input type="tel" name="telefone" id="tel" placeholder="telefone">
+        <input type="password" name="password" id="password" placeholder="senha">
+        
+    </Form>
+    
+</body>
+</html>

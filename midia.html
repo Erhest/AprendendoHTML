@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Mídias</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <h2>Audios</h2>
+    <h3>Simples</h3>
+    <audio src="Midia/audio/musica.mp3" preload="metadata" autoplay controls loop></audio> <!-- Loop deixa tocando indefinitivamente-->
+
+    <h2>Compatibilidade</h2>
+    <audio controls preload="metadata">  <!-- 'auto' carrega todo o aúdio', 'metadata' carrega parcialmente o aúdio', 'none' não carrega nada do aúdio'-->
+        <source src="Midia/audio/musica.mp3" type="audio/mpeg">
+        <source src="Midia/audio/musica.ogg" type="audio/ogg">
+        <source src="Midia/audio/musica.wav" type="audio/wav"> <!-- 'wav' arquivo muito pesado pode dar problema , 'mp3' e 'ogg' são mais recomendados site mais leve (megabyte)-->
+        <p>Desculpa, Tivemos um problema</p>
+    </audio>
+
+    <h2>Video</h2>
+    <h3>Local</h3>
+    <h4>Gato</h4>
+    <h5>MP4</h5> <!-- poster coloca uma foto no video antes de reproduzi-lo (poster="ctrl+barra de espaço")  --> 
+    <video src="Midia/video/gato.mp4" preload="metadata" controls loop autoplay></video>
+
+    <h5>Compatibilidade</h5>
+    <video controls preload="metadata">
+        <source src="Midia/video/gatinho.mp4" type="video/mp4">
+        <source src="Midia/video/gatinho.m4v" type="video/m4v">
+        <source src="Midia/video/gatinho.webm" type="video/webm">
+    </video>
+
+    <h3>Servidor</h3>
+    <h4>Youtube</h4><!-- iframe encorpora videos de outros sites--> <!-- EX: 'Youtube- compartilhar-Embed-copiar código'-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wol-XHb1VhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- allowfullscreen permite a função fullscreen no video-->
+    <iframe src="https://www.youtube.com/embed/5XYJ3bM7rAI" title="youtube video player"></iframe><!-- fazer depois-->
+
+    <h4>Vimeo</h4>
+    <h5> video é pago por isso não foi incorporado!!!!!</h5>
+
+    <h2>Incorporação</h2>
+    <h3>Páginas</h3>
+    <iframe src="texto.html" width="1000" frameboard="0"></iframe>
+    <h3>PDF</h3>
+    <iframe src="Arquivos/lorem.pdf" width="1000" height="500" frameboard="0"></iframe>
+    <h3>Spotify</h3>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4QH5Dw1Rmzf3czMvsHRD7B?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> 
+    <h3>Deezer</h3>
+    <p>devido a falta de login não foi colocado o código</p>
+    <h3>Amazon music</h3>
+    <p>devido a falta de login não foi colocado o código</p>
+ 
+    
+
+    
+</body>
+</html>
