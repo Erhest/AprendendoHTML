@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* div container*/
+        .container{
+            height: auto;
+            display: flex;
+            flex-wrap: wrap; /* quebra de linha */
+            justify-content: space-between; /* alinhamento horizontal (flex-end fica no final) */
+            align-items: flex-start;    /* alinhamento vertical */
+            flex-direction: row;
+        }
+        .box-container{
+            width: 300px;
+            color: white;
+            background-color: blue;
+            border: 2px solid red;
+        }
+        .box-container:nth-child(1){
+            order: 1;
+            background-color: blueviolet;
+            width: 65%;
+        }
+        .box-container:nth-child(2){
+            width: 95%;
+            order: 3;
+            background-color: yellow;
+        }
+        .box-container:nth-child(3){
+            order: 2;
+        }
+        .box-container:nth-child(4){
+            order: 0;
+        }
+        /* Menu*/
+        header{
+            background-color: darkgrey;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            padding: 20px;
+            align-items: center;
+
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 16pt;
+            font-family: sans-serif;
+            transition: all ease-in 0.8s; /*efeito de transição*/ 
+            padding: 10px;
+    
+        }
+        header nav a{
+            display: flex;
+            list-style: none;
+        }
+        header nav ul li{
+            margin: 20px;
+        }
+        a:hover{
+            background-color: rgb(255, 38, 0);
+            text-decoration: underline;
+            opacity: 0.5s;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FlexBox</h1>
+    <h2>Exemplo 1</h2>
+    <div class="container">
+        <div class="box-container">Ola</div> <!-- pode usar style="order:1" dentro do div-->
+        <div class="box-container">como vai</div>
+        <div class="box-container">tudo bem</div>
+        <div class="box-container">hahaha</div>
+        <div class="box-container">hehehehe</div>
+    </div>
+
+    <h2>Exemplo 2</h2>   
+    <header>
+        <a href="">Logo</a> 
+        <nav>
+            <a href="">HOME </a>
+            <a href="">CONTATO</a>
+            <a href="">SUPORTE</a>
+        </nav>
+    </header>
+</body>
+</html>
