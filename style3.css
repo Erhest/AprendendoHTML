@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+}
+a{    
+    width: 100vh;
+    height: 100vh;    
+}
+header{
+    width: 100%;
+    height: fit-content;
+    font-size: 30px;
+    background-color: burlywood;
+    text-align: center;
+}
+section{
+     
+}
+.a{
+
+}
