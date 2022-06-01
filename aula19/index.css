@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    display: ;
+}
+.block h1{
+    text-align: center;
+}
+
+.block .b{
+    border: 2px solid red;
+    margin-bottom: 10px;
+}
+
+/* Inline*/
+
+.inline{
+    
+}
+.inline h1{
+    text-align: center;
+}
+.inline .i{
+    width: 300px;
+    border: 1px solid brown;
+}
+/* Inline-block*/
+
+.inline-block{
+
+}
+.inline-block h1{
+    text-align: center;
+}
+.inline-block .ib{
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    border: 3px solid violet;
+    margin-bottom: 10px;
+}
+/* None*/
+
+.none{
+
+}
+.none h1{
+    text-align: center;
+}
+.none .n{   
+    display: none; 
+    width: 300px;    
+    border: 5px solid aqua;
+    margin-bottom: 10px;
+    /* visibility: visible */
+}
+.none .s{
+    height: 100px;
+    visibility: hidden;    
+}
+
+/* Main */
+
+main{
+    height: 400px;
+    background-color: cadetblue;
+}
+main h1{
+    text-align: center;
+}
+main ul{
+    display: flex;
+    list-style: none;
+}
+main ul li{
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* DROPDOWN */
+
+main ul li div{
+    position: absolute;
+    top: 20px;
+    display: none; /* visibility : hidden faz a mesma coisa*/
+    width: 400px;
+    height: 400px;
+}
+main ul li div img{
+    width: 100%;    
+}
+main ul li div ul{
+    display: block;
+    margin-bottom: 300px;
+}
+main ul li:hover div{
+    display: block;    /* visibility : visible faz a mesma coisa*/
+}

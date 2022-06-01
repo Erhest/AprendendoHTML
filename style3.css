@@ -16,8 +16,10 @@ header{
     background-color: burlywood;
     text-align: center;
 }
-section{
-     
+.d{
+    position: fixed;
+    background-color: aqua;
+    
 }
 .a{
 
