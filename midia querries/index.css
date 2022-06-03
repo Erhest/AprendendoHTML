@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    background-color: black;
+}
+
+/* SMARTPHONE até 600px */
+
+@media(max-width: 600px){
+    /* Menu - Barra Superior*/
+header{
+    background-color: brown;
+    text-align: center;
+}
+header nav{
+    width: 18pt;
+}
+header .desptop{
+    display: none;
+    visibility: hidden;
+}
+header .phone{
+    visibility: visible;
+}
+
+nav{
+    width: 50%;
+    background-color: blue;
+}
+
+/* MAIN*/
+main{
+    padding: 30px;
+}
+main div{
+    width: 95%;
+    margin: auto;    
+    margin-bottom: 50px;
+}
+
+main div img{
+    width: 100%;
+    height: auto;
+}
+
+main p{
+    width: 95%;
+    margin: auto;
+    font-size: 14pt;
+    text-align: justify;
+    margin-bottom: 5px;
+} 
+
+/* Footer*/
+
+footer{
+    background-color: brown;
+    padding: 10px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 18pt;
+}
+
+}
+
+
+
+
+/* TABLET 601px - 1099px */
+
+@media(min-width: 601px){
+    /* Menu - Barra Superior*/
+header{
+    background-color: green;
+    text-align: center;
+}
+
+header nav{
+    font-size: 20pt;
+}
+header .desptop{
+    display: block;
+   /* visibility: hidden;*/
+}
+header .phone{
+    display: none;
+    /*visibility: visible;*/
+}
+nav{
+    width: 50%;
+    background-color: blue;
+}
+
+/* MAIN*/
+main{
+    padding: 20px;
+}
+main div{
+    width: 80%;
+    margin: auto;    
+    margin-bottom: 50px;
+}
+
+main div img{
+    width: 100%;
+    height: auto;
+}
+
+main p{
+    width: 90%;
+    margin: auto;
+    font-size: 18pt;
+    text-align: justify;
+} 
+
+/* Footer*/
+
+footer{
+    background-color: green;
+    padding: 10px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 20pt;
+}
+
+}
+
+
+
+
+/* DESKTOP 1100px -  */
+
+@media(min-width: 1100px){
+    /* Menu - Barra Superior*/
+header{
+    background-color: brown;
+    text-align: center;
+}
+
+header nav{
+    font-size: 28pt;
+}
+
+nav{
+    width: 50%;
+    background-color: blue;
+}
+
+/* MAIN*/
+main{
+    padding: 30px;
+}
+main div{
+    width: 100px;
+    margin: auto;    
+    margin-bottom: 50px;
+}
+
+main div img{
+    width: 10%;
+    height: 400;
+}
+
+main p{    
+    font-size: 22pt;
+    text-align: justify;
+} 
+
+/* Footer*/
+
+footer{
+    background-color: brown;
+    padding: 20px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 24pt;
+}
+
+}
