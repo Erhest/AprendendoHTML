@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Pesquisa */
+
+section{
+    background-color: aqua;
+    padding: 20px;
+}
+
+section div{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+section div input{
+    width: 80%;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    outline: transparent;
+    border: transparent;
+}
+
+section div .material-icons{
+    position: relative;
+    top: 5px;
+    left: -10px;
+    color: white;
+    font-size: 16pt;
+}
+
+/* Pesquisa 2 */
+
+article{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+article input{
+    width: 300px;
+    border-radius: 10px;
+    height: 20px;
+    padding-left: 25px;
+}
+
+article label{ 
+    position: absolute;
+}
+
+article .material-icons{
+    font-size: 16pt;
+    padding: 5px;
+}
