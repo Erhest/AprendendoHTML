@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* *:not(p){      Exceto
+    background-color: chartreuse;
+} */
+
+a{
+    text-decoration: none;
+}
+
+
+ /* Menu a */
+
+
+nav{
+    background-color: dimgrey;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a{
+    width: auto;
+    font-size: 30pt;
+    margin-right: 10px;
+    transition: all ease-in-out 1s;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+}
+
+/* PSEUDO ELEMENTO */
+
+nav a::after{
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+nav a:link{
+    color: white;
+}
+
+nav a:hover{
+    color: black;
+}
+
+nav a:active{
+    color: red;
+}
+
+nav a:visited{
+    color: green;
+}
+
+/* Formulário */
+
+form{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: dimgray;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form input{
+    width: 80%;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+form input[type=text]{
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+}
+
+form input::placeholder{
+    color: darkred;    
+    font-family: cursive;
+}
+
+form input:nth-child(1){
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+form input[type=text]:focus, form input[type=email]{
+
+}
+
+form input[type=email]:invalid{
+    background-color: blueviolet;
+    font-family: cursive;
+}
+form input[type=email]:valid{
+    background-color:  green;
+    font-family: cursive;
+}
+
+form input[type=submit]{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+}
+
+/* Span */
+
+span[title=curto]{
+    background-color: green;
+}
+
+span[title~=curto]{
+    font-size: 20pt;
+}
+
+/* a link */
+
+a[href^="https:"]{ /* começar */
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+a[href$=".pdf"]{ /*TERMINAR */
+    background-color: green;
+    padding: 2px;
+    color: white;
+    font-size: 20pt;
+}
+
+/* Tabela */
+
+table{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+thead tr{
+    height: 50px;
+    background-color: dimgray;
+    color: white;
+}
+
+tbody{
+    text-align: center;
+}
+
+/* tbody tr:nth-child(n){   Seleciona todos os itens
+    background-color: bisque;
+} */
+
+tbody tr:nth-child(2n){  /* anda em pares ou even */
+    background-color: burlywood;
+}
+tbody tr:nth-child(2n-1){ /* anda em ímpar ou odd */
+    background-color: aqua;
+}
+tbody tr:nth-child(n + 11){ /* a partir de 11 todas as sequentes serão afetadas */
+    background-color: darkred;
+} 
+ tbody tr:nth-child(-n + 4){   /*pega os 4 primeiros */
+    background-color: darkgreen;
+} 
+tbody tr:nth-child(n + 5){   /* pega em um itervalo do 5 ao 8*/ 
+    background-color: gray;
+} 
+
+
+/* DIV */
+
+div{
+    width: 80%;
+    margin: auto;
+    user-select: none; /* Proibe a seleção do texto na div  */
+}
+
+div > p{
+    font-size: 20pt;
+    
+}
+
+div > p::first-letter{
+    font-size: 80pt;
+    font-family: cursive;
+    padding: 10px;
+}
+
+div > p::first-line{
+    background-color: green;
+}
+
+div > p::selection{
+    color: white;
+    background-color: yellowgreen;    
+}
+
+div > p::before{
+    content: "*";
+    font-size: 20pt;
+    color: red;
+}
+
+div > p:after{
+    content: "fim";
+    font-size: 10px;
+}
