@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Document Object Model</p>
+
+    <h1>Variáveis</h1>
+    <p>São espaços criados na mémoria</p>
+    <ul>
+        <li>Podem</li>
+        <ul>
+            <li>Podem começar com letras, $ ou _</li>
+            <li>Pode usar letras e números</li>
+            <li>Pode usar acenetos</li>
+        </ul>
+        <li>Não Podem</li>        
+        <ul>
+            <li>Não podem começar com números</li>
+            <li>Não podem conter espaços</li>
+            <li>Não podem ser palavras reservadas</li>
+        </ul>
+    </ul>
+    <pre>
+        <code>
+            //Declarando Variaveis
+            var nome1 = "Gabriel"
+            var nome2 = 'Gabriel'
+            var nome3 = `Gabriel`
+        </code>
+    </pre>
+
+    <ul>
+        <p>Principais tipos de variáveis</p>
+        <li>Inteiro/Int: -50, -2, 0, 15, 200, 10000, 54000</li>
+        <li>Reais/Float/Double: -50.5, -9.34, 0.2, 15.34, 100.2345, 10000.324</li>
+        <li>Texto/String: "a", "Gabriel", "Nome Completo", 'Maria', `Artigo gigante de texto`, '123.654.987-96'. '(21)9 1234 - 9876'</li>
+        <li>Lógico/Boolean: true, false</li>
+    </ul>
+    <script>
+        //Declarando variáveis
+        var nome1 = "Gabriel 1";
+        var nome2 = 'Gabriel 2';
+        var nome3 = `Gabriel 3`;
+
+        console.log(nome1)
+        console.log(nome2)
+        console.log(nome3)
+
+        // PESSOA AGORA
+        var nome = "Akio Hashimoto";
+        var idade = 18;
+        var sexo = "M";
+
+        console.log("Seu nome é " + nome + " com " + idade + " anos e do sexo " + sexo)
+        console.log('Seu nome é ' + nome + ' com ' + idade + ' anos e do sexo ' + sexo)
+        console.log(`Seu nome é ${nome} e você tem ${idade} anos e é do sexo ${sexo}`)
+
+        var salario = 2256.65;
+        console.log(`O salário de ${nome} é de R$ ${salario}`)
+
+        salario = 3560.50;
+        console.log(`O salário de ${nome} é de R$ ${salario}`)
+
+        //Tipos de Variaveis
+        console.log(typeof("-123"))
+
+    </script>
+</body>
+</html>
