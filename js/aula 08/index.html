@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8</title>
+    <style>
+        p{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            flex: wrap;
+        }
+        p span{
+            width: auto;
+            color: white;
+            margin: 5px;
+            font-size: 1em;
+            padding: 10px;
+            background-color: rgb(1, 1, 71);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<!-- <body onload="inicializa()">
+    <div class='teste'>
+
+    </div> -->
+<body>
+    <div class="container-form">
+        <form name="formCadastro">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Conhecimento ee Habilidades</legend>
+                <input type="text" class="inpt" placeholder="Sql, Python, Js, Node, Java, C, C# . . ." onblur="exibirTootips()">
+                <button onclick="newInput(event)">+</button>
+                <button onclick="rmInput(event)">-</button>
+                <br>
+            </fieldset>
+        </form>
+
+    </div>
+    
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
